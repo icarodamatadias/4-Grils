@@ -1,7 +1,7 @@
 <?php
-
+namespace Ifba\Model\Entities;
 class Funcionario{
-    private int $id;
+    private ?int $id = null;
     private string $nome;
     private string $cargo;
     private string $cpf;

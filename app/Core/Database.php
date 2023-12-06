@@ -10,12 +10,16 @@ class Database{
     public function __construct(){
         
         $servidor = 'localhost';
-        $banco = 'atividades';
-        $usuario = 'root';
-        $senha = '';
+        $banco = 'fourgrils';
+        $usuario = 'icaro';
+        $senha = 'icaro09072005';
         
         $dsn = "mysql:host={$servidor};dbname={$banco}";
         $this->conexao = new \PDO($dsn,$usuario,$senha);
+    }
 
+    public function getConexao()
+    {
+        return $this->conexao;
     }
 }

@@ -1,14 +1,18 @@
 <?php
 
+namespace Ifba\Model\DAO;
+use Ifba\Model\Entities\Funcionario;
+use \PDO;
  class FuncionarioDAO { 
-    private $pdo; 
+    private \PDO $pdo; 
 
-    public function __construct($pdo) { 
+    public function __construct( $pdo) { 
         $this->pdo = $pdo; 
     } 
     
-    public function cadastrarFuncionario($funcionario) { 
-        $query = "INSERT INTO funcionarios (nome, cargo, cpf, email, senha, datanascimento, telefone, logradouro) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"; 
+    public function cadastrarFuncionario( $funcionario) { 
+        $query = "INSERT INTO funcionarios (nome, cargo, cpf, email, senha, datanascimento, telefone, logradouro) 
+                  VALUES (?, ?, ?, ?, ?, ?, ?, ?)"; 
         $stmt = $this->pdo->prepare($query); 
         $stmt->bindValue(1, $funcionario->getNome()); 
         $stmt->bindValue(2, $funcionario->getCargo()); 
