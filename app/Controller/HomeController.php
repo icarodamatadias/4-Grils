@@ -42,9 +42,31 @@ class HomeController extends Controller{
     {
         $this->view('registro');
     }
-    public function cadastrarproduto()
-    {
+
+    
+    public function cadastrarproduto(){
         $this->view('cadastroproduto');
     }
+    public function vestimenta(){
+        $this->view('vestimenta');
+    }
+
+    public function acessorio(){
+        $this->view('acessorio');
+    }
+    public function calcado(){
+        $this->view('calcados');
+    }
+
+    public function infocalcado(){
+        $this->view('infocalcado');
+    }
+    public function infovestimenta(){
+        $this->view('infovestimenta');
+    }
+    public function infoacessorio(){
+        $this->view('infoacessorio');
+    }
+
     
 }

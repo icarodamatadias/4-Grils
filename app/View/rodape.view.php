@@ -3,10 +3,10 @@
                 <h4 class="title-footer">Four <span>Girls</span></h4>
                 <p class="links">
                     
-                    <a href="http://localhost/4-grils/catalogo" title="all list">Listar Tudo</a>
-                    <a href="http://localhost/4-grils/registro" title="registro">Registro</a>
-                    <a href="http://localhost/4-grils/criarconta" title="cadastro"> Cadastrar Ususario</a>
-                    <a href="http://localhost/4-grils/cadastroproduto" title="cadastrar produto"> Cadastrar Produtos</a>
+                    <a href="catalogo" title="all list">Catalogo</a>
+                    <a href="registro" title="registro">Registro</a>
+                    <a href="criarconta" title="cadastro"> Cadastrar Ususario</a>
+                    <a href="cadastroproduto" title="cadastrar produto"> Cadastrar Produtos</a>
                     <a href="#" title="topo">Topo da pagina</a>
                 </p>
                 <div class="footer-icons">

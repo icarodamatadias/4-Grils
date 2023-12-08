@@ -26,6 +26,7 @@ class FuncionarioController extends Controller{
     public function criarconta(Funcionario $funcionario){
         $con = new Database();
         $funcionarioDAO = new FuncionarioDAO($con->getConexao());
-        $funcionarioDAO->cadastrarFuncionario($funcionario);    
+        $funcionarioDAO->cadastrarFuncionario($funcionario);
+    
     }
 }
