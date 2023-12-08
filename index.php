@@ -11,11 +11,11 @@ require_once "./app/routes.php";
 
 function css(string $arquivo) : string 
 {
-    return URL_BASE."/public/css/{$arquivo}.css";
+    return "app/assets/css/{$arquivo}.css";
 }
 
 function componente(string $componente): string{
-    return PASTA_VIEW."componentes/{$componente}.view.php";
+    return PASTA_VIEW."{$componente}.view.php";
 }
 
 $url = $_GET['url'] ?? '/';

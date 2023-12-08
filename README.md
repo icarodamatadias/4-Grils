@@ -7,7 +7,7 @@
 
 ###Faça o download do Esqueleto da Aplicação
 
-[Github](https://github.com/mirandathiago/atividadesifba/archive/refs/heads/main.zip) 
+[Github]() 
 
 ###Descompacte o arquivo na pasta HTDOCS do XAMPP
 - Renomeie a Pasta para um nome da sua preferência

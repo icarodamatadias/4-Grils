@@ -16,7 +16,16 @@ class Acessorio extends Produto{
         $custo,
         $material 
     ) {
-        parent::__construct($id, $categoria, $descricao, $cor, $quantidade, $preco, $marca, $tipo, $custo);
+        parent::__construct(
+            $id, 
+            $categoria, 
+            $descricao, 
+            $cor, 
+            $quantidade, 
+            $preco, 
+            $marca, 
+            $tipo, 
+            $custo);
         $this->material = $material;
     }
 

@@ -14,11 +14,8 @@ class HomeController extends Controller{
 
     public function index()
     {
-       $dados = [
-        'titulo' => 'Atividades IFBA',
-        'data' => date('d/m/Y')
-       ];
-       $this->view('inicial',$dados);
+      
+       $this->view('inicial');
     }
 
 
@@ -27,19 +24,27 @@ class HomeController extends Controller{
         $this->view('login');
     }
 
-    function inserirFuncionario(Funcionario $funcionario) {
-        // Conexão com o banco de dados
-        
-        
+    public function criarconta()
+    {
+        $this->view('criarconta');
     }
 
-    public function criarconta(){
-        $funcionario = new Funcionario(null, "zé", "vendedor", "4544454545", "gvedjvcjvj", "sdjbchv", "2020-11-10", "7878787878", "svcjvjhvshvj");
-        $con = new Database();
-    
-        // Criação e uso do DAO
-        $funcionarioDAO = new FuncionarioDAO($con->getConexao());
-        $funcionarioDAO->cadastrarFuncionario($funcionario);
-    
+    public function produtoinfo()
+    {
+        $this->view('produtoinfo');
     }
+    public function catalogo()
+    {
+        $this->view('catalogo');
+    }
+    
+    public function registro()
+    {
+        $this->view('registro');
+    }
+    public function cadastrarproduto()
+    {
+        $this->view('cadastroproduto');
+    }
+    
 }

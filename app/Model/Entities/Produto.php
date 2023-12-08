@@ -5,11 +5,11 @@ class Produto{
     private string $categoria;
     private string $descricao;
     private string $cor;
-    private string $quantidade;
-    private int $preco;
+    private int $quantidade;
+    private float $preco;
     private string $marca;
     private string $tipo;
-    private int $custo;
+    private float $custo;
 
     public function __construct(){
         

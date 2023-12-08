@@ -1,30 +1,35 @@
 <?php require "topo.view.php" ; ?>
 
-<main class="principal">
-
-    <div class="nav-alternativa">
-        <a class="btn-voltar" href="index.html">
-          <i class="fa-solid fa-chevron-left"></i>
-            Voltar
-        </a>     
-      </div>        
-     
-    <div class="form-container">
-        <form id="login-form" action="admin.html">
-          <h2><i class="fa-solid fa-key"></i> Login</h2>
-          <input type="text" placeholder="usuario" name="login" required>
-          <input type="password" placeholder="Senha" name="senha" required>
-          <button class="btn">
-            <i class="fa-solid fa-unlock"></i>
-            Login
-          </button>
-          <a href="conta.html" class="btn verde-claro">
-            <i class="fa fa-user" aria-hidden="true"></i>
-            Criar Conta
-          </a>
-        </form>
-     </div>
-
-</main>
+<div class="form-card">
+      
+      <div class="form-card-2">
+          
+          <form class="form">
+          
+              <h2 class="title-login">Login/Cadastrar</h2>
+               
+              <div class="field">
+           
+                  <span class="input-icon icon icon-user-1"></span>
+                  <input type="text" class="input-field" placeholder="Nome" autocomplete="off">
+              
+              </div>
+              <div class="field">
+                  
+                  <span class="input-icon icon icon-locked"></span>
+                  <input type="password" class="input-field" placeholder="Senha">
+              
+              </div>
+              <div class="box-btn">
+                  
+                  <a class="btn-login">Entrar</a>
+                  <a href="#" class="btn-login">Cadastrar</a>
+              
+              </div>
+                                      
+          </form>
+          
+      </div>
+  </div><!--form-card-->
 
 <?php require "rodape.view.php" ; ?>
